@@ -1,0 +1,98 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.container{
+	margin:auto;
+	width:1200;
+	background-color:#EEF7FD;	
+}
+/*head styling*/
+.header{
+		background-color:black;
+		color:white;
+		text-align:center;
+		height:70px;
+		border:1px solid #EEF7FD;	
+}
+.float-start{
+	float:left;
+	width:20%;
+	border:1px solid #EEF7FD;
+	height:50px;
+	padding-top:20px;
+    font-size:25px;	
+}
+.float-end{
+	float:left;
+	width:19.3%;
+	border:1px solid #EEF7FD;
+	height:50px;
+	font-size:25px;
+    padding-top:20px;	
+}
+/*img1 styling*/
+.img1 img{
+	height:500px;
+	width:100%;
+}
+/* main_heading,service and trainig padding*/
+.heading {
+	padding-top:20px;
+	padding-left:15px;
+	padding-right:15px;
+}
+/*main_heading h1*/
+.main_heading h1{
+    font-size:40px;	
+}
+/*main_heading paragraph*/
+.main_heading p{
+	text-align:justify;
+    font-size:17px;	
+}
+/*Services_trainig heading */
+.Services_trainig h2{
+	font-size:24px;
+}
+/*Services_trainig lists */
+.lists ol{
+	padding-left:30px;
+	padding-bottom:5px;
+	font-size:17px;	
+}
+/*img second */
+.img2 img{
+	height:300px;
+	width:100%;
+}
+/*footer*/
+.footer{
+	background-color:black;
+	color:white;
+}
+.foot_para{
+	float:left;
+	width:50%;
+	text-align:justify;
+	padding-top:30px;
+	padding-left:40px;
+}
+.foot_list{
+	float:right;
+	width:20%;
+	padding-top:30px;
+	padding-bottom:8px;
+}
+.foot_list ul li a{
+	color:white;
+	text-decoration:none;
+}
+.foot_logo{
+	clear:both;
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:10px;
+}
+
+
