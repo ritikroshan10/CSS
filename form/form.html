@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>	
+        <link href="assets/css/form.css" rel="stylesheet">		
+	</head>
+	<body>
+        <div class="container">
+		    <h1>Basic Enquary Form</h1>
+			<form action="" method="post">
+			    <label for="search">Search :</label>
+			    <input type="search" name="search" id="search" value="" placeholder="Search something"><br><br>
+				
+			
+			    <label for="name">Name :</label>
+			    <input type="text" name="name" id="name" value="" placeholder="Enter your name"><br><br>
+				
+				<label for="DOB">Date of Birth</label>
+			    <input type="date" name="DOB" id="DOB" value="" placeholder=""> <br><br>
+				
+				<label for="email">Email :</label>
+				<input type="email" name="email" id="email" value="" placeholder="Enter your email" required><span>*</span><br><br><!--required keyword is used when you need to compulsary to fill the input box-->
+				
+				<label for="password">Password :</label>
+				<input type="password" name="password" id="password" value="" placeholder="Enter your password"> <br><br>
+				
+				<label for="contact">Contact :</label> 
+			    <input type="tel" name="contact" id="contact" value="" placeholder="Enter your contact number"><br><br>
+				
+				<label for="">Gender :</label>
+				<input type="radio" name="Gender" id="male" value="" placeholder="">Male
+			    <input type="radio" name="Gender" id="female" value="" placeholder="">Female
+			    <input type="radio" name="Gender" id="transgender" value="" placeholder="">Transgender <br><br>
+				
+				<label for="">Available Courses :</label>
+				<input type="checkbox" name="Gender" id="male" value="" placeholder="">Forented 
+			    <input type="checkbox" name="Gender" id="female" value="" placeholder="">Backend
+			    <input type="checkbox" name="Gender" id="transgender" value="" placeholder="">Digital Marketing <br><br>
+				
+				<label for="date_time">Date and Time :</label>
+				<input type="datetime-local" id="date_time" name="datetime-local" placeholder=""><br><br>
+				
+				<label for="msg">Message :</label>
+				<textarea type="text" name="msg" id="msg" value="" placeholder="Please enter your message"></textarea><br><br>
+				
+				<label for="upload">Upload :</label>
+			    <input type="file" name="upload" id="upload" value="" placeholder=""> <br><br>
+				
+				<label for="color">Select Color :</label>
+				<input type="color" name="color" id="color"><br><br>
+				
+				<label for="url">Select Color :</label>
+				<input type="url" name="url" id="url" placeholder="Enter URL"><br><br>
+				
+				<label for="num">Select Your Lucky Number :</label>
+				<input type="number" name="number" id="num" placeholder="Select any number"><br><br>
+				
+				<label for="range">Range :</label>
+				<input type="range" name="range" id="range" value="5"><br><br>
+				
+				<label for="">Payment :</label>
+				<select> 
+				    <option>Select your option</option>
+				    <option>Net banking</option>
+				    <option>UPI</option>
+				    <option>Cash</option>
+				    <option>Check</option>
+			    </select><br><br>
+				
+				<div class="btn">
+				<button type="submit">Submit</button>
+			    <button type="reset">Reset</button>
+			    </div>
+			</form>
+		</div>	
+	</body>
+</html>
+	 
