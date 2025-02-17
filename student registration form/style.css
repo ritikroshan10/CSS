@@ -1,0 +1,80 @@
+* {
+	color: white;
+}
+
+.outer {
+	background-image: url('img.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1 {
+	margin: 15px 0px;
+	text-align: center;
+}
+
+hr {
+	height: 0px;
+	border: none;
+	border-top: 3px solid white;
+}
+
+label {
+	font-size: 20px;
+}
+
+input {
+	background-color: rgba(96, 129, 168, 0.3);
+	border: none;
+	border: 1px solid white;
+	width: 300px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+::placeholder {
+	color: white;
+}
+
+Button {
+	border: none;
+	background-color: #57c3f1;
+	width: 200px;
+	;
+	padding: 10px;
+	text-align: center;
+	margin-left: 300px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+}
+
+[type="checkbox"],
+[type="radio"] {
+	width: 20px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+	filter: invert(100%);
+}
+
+span {
+	color: red;
+	font-size: 20px;
+}
+
+textarea {
+	width: 1100px;
+	height: 100px;
+	background-color: rgba(96, 129, 168, 0.3);
+	border: none;
+	border: 1px solid white;
+}
+
+select {
+	background-color: rgba(96, 129, 168, 0.3);
+}
+
+option {
+	color: black;
+}
