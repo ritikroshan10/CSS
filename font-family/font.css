@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('./fonts/Roboto-Italic-VariableFont_wdth\,wght.woff2') format('woff2'),
+         url('./fonts/Roboto-Italic-VariableFont_wdth\,wght.woff') format('woff');
+  }
+  
+  
+
+
+  /* Setps to add external font family by download
+
+  1 -->  got to chrome and download the font family 
+
+  2 -->  then create a new folder( fonts) in which you currently work
+
+  3 -->  add fonts family on this folder 
+
+  4 --> then create a new font.css file and 
+   
+      @font-face {
+        font-family: 'any name as you wish';
+        src: url('path of font family ') format('format of font family'), }
+             url('') format('');
+
+         example:    @font-face {
+                        font-family: 'roboto';
+                        src: url('./fonts/Roboto-Italic-VariableFont_wdth\,wght.woff2') format('woff2'),
+                       url('./fonts/Roboto-Italic-VariableFont_wdth\,wght.woff') format('woff');}
+ 
+  5 --> add font.css file on html file,,then you can give this font family on any element on inline,external,internal css file
+  
+  */
+
+
+  
+  /* Setps to add font-family by using embeded code/link
+
+  1 --> copy link and add on html file 
+
+  2 --> then you can give this font family on any element on inline,external,internal css file
+  
+  */
