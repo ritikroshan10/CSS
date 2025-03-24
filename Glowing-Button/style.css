@@ -1,0 +1,85 @@
+/* This ensures that the entire page is centered. */
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+    overflow: hidden;
+}
+
+/* Button Styles (.btn) */
+.btn {
+    margin: 100px;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;  /* ensures the button stays above any background elements. */
+    border-radius: 12px;
+}
+
+/* Button Background (.btn::after) */
+.btn::after {
+    content: "";
+    z-index: -1; /* places it behind the button. */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/* Glowing Effect (.btn::before)*/
+.btn::before {
+    content: "";
+    background: linear-gradient(45deg,
+            #FF0000, #FF7300, #FFFB00, #48FF00,
+            #00FFD5, #002BFF, #FF00C8, #FF0000); /* defines the rainbow colors. */
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px); /* make sure it slightly overflows the button for the glow. */
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0; /* makes the glow invisible by default. */
+}
+
+/* hover */
+.btn:hover::before {
+    opacity: 1;  /* When the user hovers over the button, the glow becomes fully visible */
+}
+
+/* Active State (.btn.active) */
+.btn.active::after {
+    background: transparent;
+}
+.btn.active {
+    color: #000;
+    font-weight: bold;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
